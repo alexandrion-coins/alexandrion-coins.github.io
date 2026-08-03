@@ -24,7 +24,7 @@
             <tr class="border-b dark:border-neutral-800"><td class="py-2 font-semibold">Origin Country:</td><td class="py-2">{{ delimit .Params.countries ", " }}</td></tr>
             <tr class="border-b dark:border-neutral-800"><td class="py-2 font-semibold">Composition:</td><td class="py-2">{{ delimit .Params.materials ", " }}</td></tr>
             <tr class="border-b dark:border-neutral-800"><td class="py-2 font-semibold">Certified Grade:</td><td class="py-2"><span class="font-mono bg-amber-100 dark:bg-amber-900 px-2 py-0.5 rounded">{{ delimit .Params.grades ", " }}</span></td></tr>
-            <tr><td class="py-2 font-semibold">Mint Location:</td><td class="py-2">{{ .Params.mint_mark }}</td></tr>
+            <tr><td class="py-2 font-semibold">Mint Location:</td><td class="py-2">{{ delimit .Params.mint_mark }}</td></tr>
             <tr><td class="py-2 font-semibold">Auction House:</td><td class="py-2">{{ .Params.auction_house }}</td></tr>
           </tbody>
         </table>
