@@ -6,6 +6,7 @@ countries: ["Roman Empire"]
 materials: ["Silver"]
 grades: ["Very Fine"]
 mint_mark: "ROMA"
+auction_house: "Concordia Numismatics, Auction 41, Lot 644, 45 EUR"
 ---
 Trajan Decius, AD 249-251. AR, Antoninianus. 3.70 g. 23.23 mm. Rome.
 Obv: IMP C M Q TRAIANVS DECIVS AVG. Radiate and cuirassed bust of Trajan Decius, right.
