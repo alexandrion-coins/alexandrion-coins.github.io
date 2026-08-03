@@ -1,0 +1,53 @@
+name: Deploy Coin Inventory to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change to "master" if your default branch uses that naming schema
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Safe Modern Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.15.0' # Forcing 22.15.0+ ensures node:module has the registerHooks export
+
+      - name: Install Frontend Assets
+        run: |
+          npm ci
+          npm install -g postcss-cli
+
+      - name: Setup Hugo Extended Environment
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Static Site with Security Bypasses
+        run: hugo --gc --minify
+        env:
+          HUGO_SECURITY_NODE_DISABLE: "true"
+
+      - name: Deploy Compiled Site to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
