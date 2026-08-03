@@ -1,7 +1,7 @@
 ---
 title: "Trajan Decius, 249-251 AD. AR, Antoninianus. 3.5 g. 23 mm. Rome."
 date: 2026-03-08
-image: "images/743eb90f-2498-4740-b26a-f21d98f5385c.jpg"
+image: "images/Screenshot 2026-08-03 at 23.21.01.png"
 countries: ["Roman Empire"]
 materials: ["Silver"]
 grades: ["Very Fine"]
