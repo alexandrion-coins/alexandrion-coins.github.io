@@ -6,6 +6,7 @@ countries: ["Roman Empire"]
 materials: ["Silver"]
 grades: ["Sehr schön-vorzüglich"]
 mint_mark: "ROMA"
+auction_house: "VIA, E-live Auction 26, Lot 133, 40 EUR"
 ---
 KAISERZEIT, Traianus Decius 249-251, Antoninian 249-251, Rom.
 
