@@ -14,7 +14,7 @@
         
         <!-- Render Coin Thumbnail if specified -->
         {{ if .Params.image }}
-          <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="w-full h-56 object-cover">
+          <a href="{{ .Permalink }}"> <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="w-full h-56 object-cover"> </a>
         {{ end }}
         
         <div class="p-5">
