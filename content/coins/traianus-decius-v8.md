@@ -1,7 +1,7 @@
 ---
 title: "Trajan Decius, AD 249-251. AR, Sesterce. 14.9 g. 29 mm. Rome."
 date: 2026-02-27
-image: "images/trajan-decius-v8.jpeg"
+image: "images/Screenshot 2026-08-03 at 23.52.51.png"
 countries: ["Roman Empire"]
 materials: ["AE"]
 grades: ["VF"]
